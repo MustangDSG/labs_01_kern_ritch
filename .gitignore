@@ -86,5 +86,4 @@ $RECYCLE.BIN/
 
 # Custom
 practice_001/CMakeLists.txt.user
-build-practice_001-Desktop_Qt_5_5_1_MinGW_32bit-Debug/*
-build-practice_001-Desktop_Qt_5_5_1_MinGW_32bit-Default/*
+build-*
