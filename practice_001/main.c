@@ -19,22 +19,40 @@ int main(int argc, char *argv[])
 //        //printf("%d", i);
 //    }
 
-    //ex. 1.3
+//    //ex. 1.3
 
-    printf("Fahrenheit to Celsius converter\n\n");
+//    printf("Fahrenheit to Celsius converter\n\n");
+//    float fahr, celsius;
+//    int lower, upper, step;
+
+//    lower = -100;
+//    upper = 300;
+//    step = 20;
+
+//    fahr = lower;
+//    while (fahr <= upper)
+//    {
+//        celsius = (5.0 / 9.0) * (fahr - 32.0);
+//        printf("%4.0f\t%6.1f\n", fahr, celsius);
+//        fahr = fahr + step;
+//    }
+
+    //ex. 1.4
+
+    printf("Celsius to Fahrenheit converter\n\n");
     float fahr, celsius;
     int lower, upper, step;
 
     lower = -100;
-    upper = 300;
+    upper = 100;
     step = 20;
 
-    fahr = lower;
-    while (fahr <= upper)
+    celsius = lower;
+    while (celsius <= upper)
     {
-        celsius = (5.0 / 9.0) * (fahr - 32.0);
-        printf("%4.0f\t%6.1f\n", fahr, celsius);
-        fahr = fahr + step;
+        fahr = celsius * (9.0 / 5.0) + 32.0;
+        printf("%4.0f\t%6.1f\n", celsius, fahr);
+        celsius = celsius + step;
     }
 
     return 0;
