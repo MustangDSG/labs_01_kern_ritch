@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
 //        //printf("%d", i);
 //    }
 
+    //Fahrenheit to Celsius converter
     int fahr, celsius;
     int lower, upper, step;
 
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
     while (fahr <= upper)
     {
         celsius = 5 * (fahr-32) / 9;
-        printf("%d\t%d\n", fahr, celsius);
+        printf("%4d\t%6d\n", fahr, celsius);
         fahr = fahr + step;
     }
 
