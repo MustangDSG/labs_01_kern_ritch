@@ -19,7 +19,9 @@ int main(int argc, char *argv[])
 //        //printf("%d", i);
 //    }
 
-    //Fahrenheit to Celsius converter
+    //ex. 1.3
+
+    printf("Fahrenheit to Celsius converter\n\n");
     float fahr, celsius;
     int lower, upper, step;
 
