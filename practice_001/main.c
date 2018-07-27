@@ -1,52 +1,48 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[])
+int main()
 {
     //ex. 1.1
 
-//    //printf("Test1\n");
-//    printf("Hello, World!\n");
-//    //printf(*argv[argc]);
-//    printf("Hello, ");
-//    printf("World!");
-//    printf("\n");
+    printf("Hello, World!\n");
+    printf("Hello, ");
+    printf("World!");
+    printf("\n");
 
     //ex. 1.2
 
-//    for (volatile int i=0; i<10; i++)
-//    {
-//        printf("\a");
-//        //printf("%d", i);
-//    }
+    printf("\nTesting all escape sequencies.\n");
+    printf("New line '\\n'.\n");
+    printf("Horizontal \t tab '\\t'.\n");
+    printf("Vertical \v tab '\\v'.\n");
+    printf("Back space, '\\b' \b.\n");
+    printf("Carriage return '\\r' \r.\n");
+    printf("Fill page, '\\f' \f.\n");
+    printf("System bell '\\a'\a.\n");
+    printf("Some special chars '\"' \? \\. Oct code \057, hex code \x2A.\n");
 
-//    //ex. 1.3
+    //ex. 1.3
 
-//    printf("Fahrenheit to Celsius converter\n\n");
-//    float fahr, celsius;
-//    int lower, upper, step;
-
-//    lower = -100;
-//    upper = 300;
-//    step = 20;
-
-//    fahr = lower;
-//    while (fahr <= upper)
-//    {
-//        celsius = (5.0 / 9.0) * (fahr - 32.0);
-//        printf("%4.0f\t%6.1f\n", fahr, celsius);
-//        fahr = fahr + step;
-//    }
+    printf("\nFahrenheit to Celsius converter.\n");
+    float fahr, celsius;
+    int lower, upper, step;
+    lower = -100;
+    upper = 300;
+    step = 20;
+    fahr = lower;
+    while (fahr <= upper)
+    {
+        celsius = (5.0 / 9.0) * (fahr - 32.0);
+        printf("%4.0f\t%6.1f\n", fahr, celsius);
+        fahr = fahr + step;
+    }
 
     //ex. 1.4
 
-    printf("Celsius to Fahrenheit converter\n\n");
-    float fahr, celsius;
-    int lower, upper, step;
-
+    printf("\nCelsius to Fahrenheit converter.\n");
     lower = -100;
     upper = 100;
     step = 20;
-
     celsius = lower;
     while (celsius <= upper)
     {
